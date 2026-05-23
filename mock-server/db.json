@@ -1,0 +1,776 @@
+{
+  "gares": [
+    {
+      "id": "gare-001",
+      "nom": "Gare Routière de Mvan",
+      "ville": "Yaoundé",
+      "quartier": "Mvan",
+      "adresse": "Carrefour Mvan, Route de l'aéroport, Yaoundé",
+      "localisation": {
+        "latitude": 3.848,
+        "longitude": 11.5021
+      },
+      "description": "Principal hub de transport pour les voyages vers le sud et le littoral. Gare sécurisée et moderne, offrant une multitude de services pour un voyage confortable.",
+      "imageUrl": "/images/1.jpg",
+      "services": [
+        "WIFI",
+        "PARKING",
+        "RESTAURATION",
+        "SALLE_ATTENTE",
+        "TOILETTES",
+        "SECURITE"
+      ],
+      "nbAgencesAffiliees": 4,
+      "estOuvert": true,
+      "horaires": "24h/24"
+    },
+    {
+      "id": "gare-002",
+      "nom": "Gare de Buca",
+      "ville": "Douala",
+      "quartier": "Buca",
+      "adresse": "123 Rue de la Liberté, Douala",
+      "localisation": {
+        "latitude": 4.0483,
+        "longitude": 9.7043
+      },
+      "description": "La gare la plus moderne de Douala, servant de point de départ principal pour l'ouest du pays. Elle est réputée pour sa propreté et son organisation.",
+      "imageUrl": "/images/2.jpg",
+      "services": ["WIFI", "SALLE_ATTENTE", "TOILETTES", "SECURITE"],
+      "nbAgencesAffiliees": 2,
+      "estOuvert": true,
+      "horaires": "05h00 - 23h00"
+    },
+    {
+      "id": "gare-003",
+      "nom": "Gare d'Etoudi",
+      "ville": "Yaoundé",
+      "quartier": "Etoudi",
+      "adresse": "Près du marché d'Etoudi, Yaoundé",
+      "localisation": {
+        "latitude": 3.8999,
+        "longitude": 11.5213
+      },
+      "description": "Une gare plus petite mais très active, idéale pour les voyages vers les régions du nord. Ambiance locale et authentique.",
+      "imageUrl": "/images/3.jpg",
+      "services": ["RESTAURATION", "TOILETTES"],
+      "nbAgencesAffiliees": 2,
+      "estOuvert": false,
+      "horaires": "06h00 - 20h00"
+    },
+    {
+      "id": "gare-004",
+      "nom": "Gare de Kribi",
+      "ville": "Kribi",
+      "quartier": "Centre-ville",
+      "adresse": "Avenue des plages, Kribi",
+      "localisation": {
+        "latitude": 2.9474,
+        "longitude": 9.9145
+      },
+      "description": "La porte d'entrée de la cité balnéaire. Parfait pour commencer vos vacances en toute sérénité.",
+      "imageUrl": "/images/2.jpg",
+      "services": ["PARKING", "RESTAURATION", "SALLE_ATTENTE"],
+      "nbAgencesAffiliees": 2,
+      "estOuvert": true,
+      "horaires": "07h00 - 19h00"
+    }
+  ],
+  "agences": [
+    {
+      "id": "agency-01",
+      "organisationId": "org-01",
+      "userId": "user-01",
+      "longName": "General Express Voyage",
+      "shortName": "General Express",
+      "logoUrl": "/agency-logos/general.jpg",
+      "location": "Yaoundé, Cameroun",
+      "description": "Spécialistes des voyages d'aventure en Afrique centrale depuis 15 ans. Nous offrons des expériences authentiques et mémorables.",
+      "greetingMessage": "Voyagez en toute sécurité avec General Express!",
+      "rating": 4.8,
+      "specialties": ["Transport VIP", "Courrier"],
+      "contact": {
+        "email": "contact@general-express.com",
+        "phone": "+237 6 99 88 77 66",
+        "website": "www.general-express.com"
+      },
+      "gareIds": ["gare-001", "gare-002"]
+    },
+    {
+      "id": "agency-02",
+      "organisationId": "org-02",
+      "userId": "user-02",
+      "longName": "Touristique Express S.A.",
+      "shortName": "Touristique",
+      "logoUrl": "/agency-logos/touristique.jpg",
+      "location": "Douala, Cameroun",
+      "description": "Voyages haut de gamme avec un service personnalisé. Le confort du train sur la route.",
+      "greetingMessage": "Confort et rapidité, c'est Touristique Express!",
+      "rating": 4.5,
+      "specialties": ["Voyages de luxe", "Nord-Sud", "Confort"],
+      "contact": {
+        "email": "info@touristique.com",
+        "phone": "+237 6 55 44 33 22",
+        "website": "www.touristique-express.com"
+      },
+      "gareIds": ["gare-001", "gare-003", "gare-005"]
+    },
+    {
+      "id": "agency-03",
+      "organisationId": "org-03",
+      "userId": "user-03",
+      "longName": "Finex Voyage Sarl",
+      "shortName": "Finex Voyage",
+      "logoUrl": "/agency-logos/finexs.jpg",
+      "location": "Bafoussam, Cameroun",
+      "description": "La référence pour l'Ouest Cameroun. Ponctualité et sécurité sont nos devises.",
+      "greetingMessage": "L'expertise au service de votre voyage.",
+      "rating": 4.9,
+      "specialties": ["Ouest", "Fret", "Voyages de nuit"],
+      "contact": {
+        "email": "hello@finex.com",
+        "phone": "+237 6 77 66 55 44",
+        "website": "www.finex-voyages.com"
+      },
+      "gareIds": ["gare-002", "gare-004"]
+    },
+    {
+      "id": "agency-04",
+      "organisationId": "org-04",
+      "userId": "user-04",
+      "longName": "Buca Voyages",
+      "shortName": "Buca",
+      "logoUrl": "/agency-logos/bucavoyage.jpeg",
+      "location": "Mbalmayo, Cameroun",
+      "description": "Le transporteur historique du grand sud. Une flotte moderne pour votre confort.",
+      "greetingMessage": "Le plaisir de voyager.",
+      "rating": 4.2,
+      "specialties": ["Sud", "Litoral", "Bus Climatisés"],
+      "contact": {
+        "email": "contact@buca.com",
+        "phone": "+237 6 99 00 11 22",
+        "website": "www.buca-voyages.com"
+      },
+      "gareIds": ["gare-001"]
+    },
+    {
+      "id": "agency-05",
+      "organisationId": "org-05",
+      "userId": "user-05",
+      "longName": "Global Voyages Internationaux",
+      "shortName": "Global Voyages",
+      "location": "Ebolowa",
+      "socialNetwork": "facebook.com/global",
+      "description": "Votre porte d'entrée vers l'international et au-delà.",
+      "greetingMessage": "Le monde à portée de main.",
+      "logoUrl": "/agency-logos/global.jpeg",
+      "gareIds": ["gare-001", "gare-004"]
+    },
+    {
+      "id": "agency-06",
+      "organisationId": "org-06",
+      "userId": "user-06",
+      "longName": "Mondial Express",
+      "shortName": "Mondial",
+      "logoUrl": "/agency-logos/mondial.png",
+      "location": "Yaoundé",
+      "description": "Le spécialiste du Grand Nord.",
+      "greetingMessage": "Direction le septentrion !",
+      "rating": 4,
+      "specialties": ["Grand Nord", "Aventure"],
+      "contact": {
+        "email": "info@mondial.com",
+        "phone": "+237 6 00 00 00 00",
+        "website": "www.mondial.com"
+      },
+      "gareIds": ["gare-003"]
+    }
+  ],
+  "departs": [
+    {
+      "idVoyage": "v-101",
+      "titre": "Voyage Yaoundé - Douala",
+      "description": "Départ matinal vers Douala, la capitale économique.",
+      "dateDepartPrev": "2025-12-15T08:00:00Z",
+      "lieuDepart": "Yaoundé",
+      "dateDepartEffectif": "2025-12-15T08:00:00Z",
+      "dateArriveEffectif": "2025-12-15T12:00:00Z",
+      "lieuArrive": "Douala",
+      "heureDepartEffectif": "08:00",
+      "dureeVoyage": "4h00",
+      "heureArrive": "12:00",
+      "nbrPlaceReservable": 30,
+      "nbrPlaceRestante": 15,
+      "datePublication": "2025-12-01T08:00:00Z",
+      "dateLimiteReservation": "2025-12-14T23:59:59Z",
+      "dateLimiteConfirmation": "2025-12-14T23:59:59Z",
+      "statusVoyage": "PUBLIE",
+      "smallImage": "/agency-logos/general.jpg",
+      "bigImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop",
+      "nomClasseVoyage": "Classique",
+      "prix": 7000,
+      "nomAgence": "General Express",
+      "agencyId": "agency-01",
+      "pointDeDepart": "Gare Routière de Mvan",
+      "pointArrivee": "Gare de Bonabéri",
+      "vehicule": {
+        "idVehicule": "veh-001",
+        "nom": "Toyota Coaster",
+        "modele": "Coaster 2022",
+        "description": "Minibus confortable, climatisé, idéal pour les longs trajets.",
+        "nbrPlaces": 30,
+        "lienPhoto": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop",
+        "idAgenceVoyage": "agency-01",
+        "plaqueMatricule": "CM-123-AB"
+      },
+      "placeReservees": [],
+      "amenities": [],
+      "id": "7e6f"
+    },
+    {
+      "idVoyage": "v-102",
+      "titre": "Voyage Yaoundé - Kribi (VIP)",
+      "description": "Voyage confort vers la ville balnéaire de Kribi.",
+      "dateDepartPrev": "2025-12-15T08:30:00Z",
+      "lieuDepart": "Yaoundé",
+      "dateDepartEffectif": "2025-12-15T08:30:00Z",
+      "dateArriveEffectif": "2025-12-15T12:30:00Z",
+      "lieuArrive": "Kribi",
+      "heureDepartEffectif": "08:30",
+      "dureeVoyage": "4h00",
+      "heureArrive": "12:30",
+      "nbrPlaceReservable": 20,
+      "nbrPlaceRestante": 4,
+      "datePublication": "2025-12-01T08:30:00Z",
+      "dateLimiteReservation": "2025-12-14T23:59:59Z",
+      "dateLimiteConfirmation": "2025-12-14T23:59:59Z",
+      "statusVoyage": "PUBLIE",
+      "smallImage": "/agency-logos/touristique.jpg",
+      "bigImage": "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?q=80&w=1000&auto=format&fit=crop",
+      "nomClasseVoyage": "VIP",
+      "prix": 8500,
+      "nomAgence": "Touristique Express",
+      "agencyId": "agency-02",
+      "pointDeDepart": "Gare Routière de Mvan",
+      "pointArrivee": "Centre-ville Kribi",
+      "vehicule": {
+        "idVehicule": "veh-001",
+        "nom": "Toyota Coaster",
+        "modele": "Coaster 2022",
+        "description": "Minibus confortable, climatisé, idéal pour les longs trajets.",
+        "nbrPlaces": 30,
+        "lienPhoto": "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?q=80&w=1887&auto=format&fit=crop",
+        "idAgenceVoyage": "agency-01",
+        "plaqueMatricule": "CM-123-AB"
+      },
+      "placeReservees": [],
+      "amenities": [],
+      "id": "839d"
+    },
+    {
+      "idVoyage": "v-103",
+      "titre": "Voyage Yaoundé - Bafoussam",
+      "description": "Départ vers la région de l'Ouest.",
+      "dateDepartPrev": "2025-12-15T09:00:00Z",
+      "lieuDepart": "Yaoundé",
+      "dateDepartEffectif": "2025-12-15T09:00:00Z",
+      "dateArriveEffectif": "2025-12-15T14:00:00Z",
+      "lieuArrive": "Bafoussam",
+      "heureDepartEffectif": "09:00",
+      "dureeVoyage": "5h00",
+      "heureArrive": "14:00",
+      "nbrPlaceReservable": 35,
+      "nbrPlaceRestante": 25,
+      "datePublication": "2025-12-01T09:00:00Z",
+      "dateLimiteReservation": "2025-12-14T23:59:59Z",
+      "dateLimiteConfirmation": "2025-12-14T23:59:59Z",
+      "statusVoyage": "PUBLIE",
+      "smallImage": "/agency-logos/finexs.jpg",
+      "bigImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop",
+      "nomClasseVoyage": "Classique",
+      "prix": 6000,
+      "nomAgence": "Finex Voyage",
+      "agencyId": "agency-03",
+      "pointDeDepart": "Gare Routière de Mvan",
+      "pointArrivee": "Gare Centrale Bafoussam",
+      "vehicule": {
+        "idVehicule": "veh-001",
+        "nom": "Toyota Coaster",
+        "modele": "Coaster 2022",
+        "description": "Minibus confortable, climatisé, idéal pour les longs trajets.",
+        "nbrPlaces": 30,
+        "lienPhoto": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop",
+        "idAgenceVoyage": "agency-01",
+        "plaqueMatricule": "CM-123-AB"
+      },
+      "placeReservees": [],
+      "amenities": [],
+      "id": "a792"
+    },
+    {
+      "idVoyage": "v-104",
+      "titre": "Voyage Yaoundé - Douala (VIP Climatisé)",
+      "description": "Voyage rapide et climatisé vers Douala.",
+      "dateDepartPrev": "2025-12-15T09:15:00Z",
+      "lieuDepart": "Yaoundé",
+      "dateDepartEffectif": "2025-12-15T09:15:00Z",
+      "dateArriveEffectif": "2025-12-15T13:15:00Z",
+      "lieuArrive": "Douala",
+      "heureDepartEffectif": "09:15",
+      "dureeVoyage": "4h00",
+      "heureArrive": "13:15",
+      "nbrPlaceReservable": 25,
+      "nbrPlaceRestante": 10,
+      "datePublication": "2025-12-01T09:15:00Z",
+      "dateLimiteReservation": "2025-12-14T23:59:59Z",
+      "dateLimiteConfirmation": "2025-12-14T23:59:59Z",
+      "statusVoyage": "PUBLIE",
+      "smallImage": "/agency-logos/bucavoyage.jpeg",
+      "bigImage": "https://images.unsplash.com/photo-1557223562-6c77ef16210f?q=80&w=1000&auto=format&fit=crop",
+      "nomClasseVoyage": "VIP Climatisé",
+      "prix": 7500,
+      "nomAgence": "Buca Voyages",
+      "agencyId": "agency-04",
+      "pointDeDepart": "Gare Routière de Mvan",
+      "pointArrivee": "Gare de Bonamoussadi",
+      "vehicule": {
+        "idVehicule": "veh-001",
+        "nom": "Toyota Coaster",
+        "modele": "Coaster 2022",
+        "description": "Minibus confortable, climatisé, idéal pour les longs trajets.",
+        "nbrPlaces": 30,
+        "lienPhoto": "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?q=80&w=1887&auto=format&fit=crop",
+        "idAgenceVoyage": "agency-01",
+        "plaqueMatricule": "CM-123-AB"
+      },
+      "placeReservees": [],
+      "amenities": [],
+      "id": "1626"
+    },
+    {
+      "idVoyage": "v-105",
+      "titre": "Voyage Yaoundé - Ngaoundéré (Premium)",
+      "description": "Long voyage en classe premium vers le Grand Nord.",
+      "dateDepartPrev": "2025-12-15T10:00:00Z",
+      "lieuDepart": "Yaoundé",
+      "dateDepartEffectif": "2025-12-15T10:00:00Z",
+      "dateArriveEffectif": "2025-12-16T06:00:00Z",
+      "lieuArrive": "Ngaoundéré",
+      "heureDepartEffectif": "10:00",
+      "dureeVoyage": "20h00",
+      "heureArrive": "06:00 (J+1)",
+      "nbrPlaceReservable": 20,
+      "nbrPlaceRestante": 8,
+      "datePublication": "2025-12-01T10:00:00Z",
+      "dateLimiteReservation": "2025-12-14T23:59:59Z",
+      "dateLimiteConfirmation": "2025-12-14T23:59:59Z",
+      "statusVoyage": "PUBLIE",
+      "smallImage": "/agency-logos/global.jpeg",
+      "bigImage": "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7?q=80&w=1000&auto=format&fit=crop",
+      "nomClasseVoyage": "Premium",
+      "prix": 15000,
+      "nomAgence": "Global Voyages",
+      "agencyId": "agency-05",
+      "pointDeDepart": "Gare Routière de Mvan",
+      "pointArrivee": "Gare Centrale Ngaoundéré",
+      "vehicule": {
+        "idVehicule": "veh-001",
+        "nom": "Toyota Coaster",
+        "modele": "Coaster 2022",
+        "description": "Minibus confortable, climatisé, idéal pour les longs trajets.",
+        "nbrPlaces": 30,
+        "lienPhoto": "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?q=80&w=1887&auto=format&fit=crop",
+        "idAgenceVoyage": "agency-01",
+        "plaqueMatricule": "CM-123-AB"
+      },
+      "placeReservees": [],
+      "amenities": [],
+      "id": "701a"
+    },
+    {
+      "idVoyage": "trip-301",
+      "titre": "Voyage Yaoundé - Ngaoundéré",
+      "heureDepartEffectif": "06:00",
+      "lieuDepart": "Yaoundé",
+      "lieuArrive": "Ngaoundéré",
+      "nomAgence": "Global Express",
+      "agencyId": "agency-05",
+      "smallImage": "/agency-logos/global.jpeg",
+      "prix": 12000,
+      "dateDepartPrev": "2025-12-20T06:00:00Z",
+      "description": "Départ matinal pour le train.",
+      "statusVoyage": "PUBLIE",
+      "nbrPlaceReservable": 50,
+      "nbrPlaceRestante": 40,
+      "id": "41db"
+    },
+    {
+      "idVoyage": "trip-302",
+      "titre": "Voyage Yaoundé - Bertoua",
+      "heureDepartEffectif": "08:00",
+      "lieuDepart": "Yaoundé",
+      "lieuArrive": "Bertoua",
+      "nomAgence": "Mondial Express",
+      "agencyId": "agency-06",
+      "smallImage": "/agency-logos/mondial.png",
+      "prix": 5000,
+      "dateDepartPrev": "2025-12-20T08:00:00Z",
+      "statusVoyage": "PUBLIE",
+      "nbrPlaceReservable": 30,
+      "nbrPlaceRestante": 10,
+      "id": "0a00"
+    }
+  ],
+  "plannerTrips": [
+    {
+      "id": "1",
+      "agencyId": "agency-01",
+      "title": "Yaoundé - Douala",
+      "dayOfWeek": 1,
+      "startTime": "08:00",
+      "endTime": "12:30",
+      "category": "Classic"
+    },
+    {
+      "id": "2",
+      "agencyId": "agency-01",
+      "title": "Yaoundé - Bafoussam",
+      "dayOfWeek": 1,
+      "startTime": "09:00",
+      "endTime": "15:00",
+      "category": "VIP"
+    },
+    {
+      "id": "29",
+      "agencyId": "agency-01",
+      "title": "Yaoundé - Kribi",
+      "dayOfWeek": 1,
+      "startTime": "09:30",
+      "endTime": "13:00",
+      "category": "Premium"
+    },
+    {
+      "id": "3",
+      "agencyId": "agency-01",
+      "title": "Douala - Yaoundé",
+      "dayOfWeek": 1,
+      "startTime": "14:00",
+      "endTime": "18:30",
+      "category": "Classic"
+    },
+    {
+      "id": "4",
+      "agencyId": "agency-01",
+      "title": "Yaoundé - Kribi",
+      "dayOfWeek": 2,
+      "startTime": "07:00",
+      "endTime": "11:00",
+      "category": "Premium"
+    },
+    {
+      "id": "5",
+      "agencyId": "agency-01",
+      "title": "Kribi - Yaoundé",
+      "dayOfWeek": 2,
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "category": "Premium"
+    },
+    {
+      "id": "6",
+      "agencyId": "agency-01",
+      "title": "Douala - Bafoussam",
+      "dayOfWeek": 3,
+      "startTime": "10:00",
+      "endTime": "16:00",
+      "category": "Classic"
+    },
+    {
+      "id": "7",
+      "agencyId": "agency-01",
+      "title": "Bafoussam - Yaoundé",
+      "dayOfWeek": 3,
+      "startTime": "11:00",
+      "endTime": "17:00",
+      "category": "VIP"
+    },
+    {
+      "id": "8",
+      "agencyId": "agency-01",
+      "title": "Yaoundé - Douala",
+      "dayOfWeek": 4,
+      "startTime": "06:00",
+      "endTime": "10:30",
+      "category": "Classic"
+    },
+    {
+      "id": "9",
+      "agencyId": "agency-01",
+      "title": "Douala - Kribi",
+      "dayOfWeek": 5,
+      "startTime": "12:00",
+      "endTime": "15:00",
+      "category": "VIP"
+    },
+    {
+      "id": "10",
+      "agencyId": "agency-01",
+      "title": "Yaoundé - Bertoua",
+      "dayOfWeek": 6,
+      "startTime": "08:00",
+      "endTime": "14:00",
+      "category": "Classic"
+    },
+    {
+      "id": "11",
+      "agencyId": "agency-01",
+      "title": "Bertoua - Yaoundé",
+      "dayOfWeek": 7,
+      "startTime": "09:00",
+      "endTime": "15:00",
+      "category": "Classic"
+    },
+    {
+      "id": "12",
+      "agencyId": "agency-02",
+      "title": "Douala - Yaoundé",
+      "dayOfWeek": 1,
+      "startTime": "07:30",
+      "endTime": "12:00",
+      "category": "VIP"
+    },
+    {
+      "id": "13",
+      "agencyId": "agency-02",
+      "title": "Yaoundé - Kribi",
+      "dayOfWeek": 2,
+      "startTime": "10:00",
+      "endTime": "14:00",
+      "category": "Premium"
+    },
+    {
+      "id": "14",
+      "agencyId": "agency-02",
+      "title": "Douala - Bafoussam",
+      "dayOfWeek": 3,
+      "startTime": "09:30",
+      "endTime": "15:30",
+      "category": "Classic"
+    },
+    {
+      "id": "15",
+      "agencyId": "agency-02",
+      "title": "Kribi - Douala",
+      "dayOfWeek": 4,
+      "startTime": "11:00",
+      "endTime": "14:00",
+      "category": "Premium"
+    },
+    {
+      "id": "16",
+      "agencyId": "agency-02",
+      "title": "Douala - Limbé",
+      "dayOfWeek": 5,
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "category": "Classic"
+    },
+    {
+      "id": "17",
+      "agencyId": "agency-03",
+      "title": "Bafoussam - Douala",
+      "dayOfWeek": 1,
+      "startTime": "05:00",
+      "endTime": "10:00",
+      "category": "Premium"
+    },
+    {
+      "id": "18",
+      "agencyId": "agency-03",
+      "title": "Douala - Bafoussam",
+      "dayOfWeek": 1,
+      "startTime": "12:00",
+      "endTime": "17:00",
+      "category": "Premium"
+    },
+    {
+      "id": "19",
+      "agencyId": "agency-03",
+      "title": "Bafoussam - Yaoundé",
+      "dayOfWeek": 2,
+      "startTime": "08:00",
+      "endTime": "14:00",
+      "category": "Classic"
+    },
+    {
+      "id": "20",
+      "agencyId": "agency-03",
+      "title": "Yaoundé - Bafoussam",
+      "dayOfWeek": 2,
+      "startTime": "09:00",
+      "endTime": "15:00",
+      "category": "VIP"
+    },
+    {
+      "id": "21",
+      "agencyId": "agency-04",
+      "title": "Yaoundé - Mbalmayo",
+      "dayOfWeek": 1,
+      "startTime": "07:00",
+      "endTime": "08:30",
+      "category": "Classic"
+    },
+    {
+      "id": "22",
+      "agencyId": "agency-04",
+      "title": "Mbalmayo - Yaoundé",
+      "dayOfWeek": 1,
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "category": "Classic"
+    },
+    {
+      "id": "23",
+      "agencyId": "agency-04",
+      "title": "Yaoundé - Ebolowa",
+      "dayOfWeek": 3,
+      "startTime": "10:00",
+      "endTime": "13:00",
+      "category": "VIP"
+    },
+    {
+      "id": "24",
+      "agencyId": "agency-04",
+      "title": "Yaoundé - Sangmélima",
+      "dayOfWeek": 3,
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "category": "Classic"
+    },
+    {
+      "id": "25",
+      "agencyId": "agency-05",
+      "title": "Yaoundé - Ngaoundéré",
+      "dayOfWeek": 4,
+      "startTime": "18:00",
+      "endTime": "12:00",
+      "category": "Nocturne"
+    },
+    {
+      "id": "26",
+      "agencyId": "agency-05",
+      "title": "Ngaoundéré - Yaoundé",
+      "dayOfWeek": 5,
+      "startTime": "18:00",
+      "endTime": "12:00",
+      "category": "Nocturne"
+    },
+    {
+      "id": "27",
+      "agencyId": "agency-06",
+      "title": "Yaoundé - Bertoua",
+      "dayOfWeek": 6,
+      "startTime": "06:00",
+      "endTime": "12:00",
+      "category": "Classic"
+    },
+    {
+      "id": "28",
+      "agencyId": "agency-06",
+      "title": "Bertoua - Yaoundé",
+      "dayOfWeek": 7,
+      "startTime": "06:00",
+      "endTime": "12:00",
+      "category": "Classic"
+    },
+    {
+      "id": "3407",
+      "title": "Yaounde- Baffousam",
+      "dayOfWeek": 1,
+      "startTime": "08:55",
+      "endTime": "12:55",
+      "category": "Classic",
+      "agencyId": "agency-01"
+    }
+  ],
+
+  "affiliationTaxes": [
+    {
+      "id": "tax-01",
+      "agencyId": "agency-01",
+      "stationId": "gare-001",
+      "amount": 50000,
+      "dueDate": "2025-12-31",
+      "status": "payé",
+      "paymentDate": "2025-12-15"
+    },
+    {
+      "id": "tax-02",
+      "agencyId": "agency-02",
+      "stationId": "gare-001",
+      "amount": 50000,
+      "dueDate": "2025-12-31",
+      "status": "en attente",
+      "paymentDate": null
+    },
+    {
+      "id": "tax-03",
+      "agencyId": "agency-04",
+      "stationId": "gare-001",
+      "amount": 50000,
+      "dueDate": "2025-11-30",
+      "status": "en retard",
+      "paymentDate": null
+    },
+    {
+      "id": "tax-04",
+      "agencyId": "agency-05",
+      "stationId": "gare-001",
+      "amount": 50000,
+      "dueDate": "2025-12-31",
+      "status": "payé",
+      "paymentDate": "2025-12-20"
+    }
+  ],
+  "policiesAndTaxes": [
+    {
+      "id": "pol-01",
+      "stationId": "gare-001",
+      "title": "Règlement intérieur de la gare",
+      "description": "Ce document détaille les règles de conduite et de sécurité à respecter dans l'enceinte de la gare.",
+      "category": "Politique",
+      "amount": null,
+      "effectiveDate": "2025-01-01",
+      "documentUrl": "/documents/reglement_interieur.pdf"
+    },
+    {
+      "id": "tax-01",
+      "stationId": "gare-001",
+      "title": "Taxe de stationnement mensuelle",
+      "description": "Taxe obligatoire pour toutes les agences opérant dans la gare.",
+      "category": "Taxe",
+      "amount": 50000,
+      "effectiveDate": "2025-01-01",
+      "documentUrl": null
+    },
+    {
+      "id": "pol-02",
+      "stationId": "gare-001",
+      "title": "Politique de gestion des déchets",
+      "description": "Directives pour le tri et l'élimination des déchets produits par les agences et les voyageurs.",
+      "category": "Politique",
+      "amount": null,
+      "effectiveDate": "2025-02-01",
+      "documentUrl": null
+    }
+  ],
+  "busStationManagerAccount": {
+    "id": "bsm-user-001",
+    "busStationId": "gare-001",
+    "name": "Jean Dupont",
+    "email": "jean.dupont@gare-mvan.com",
+    "phone": "+237 6 99 00 00 01",
+    "role": "Directeur de Gare",
+    "lastLogin": "2025-12-22T10:30:00Z"
+  }
+}
