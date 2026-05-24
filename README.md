@@ -12,7 +12,7 @@ stationnement et ainsi que la gestion des reservations de voyage pour les client
 
 # Technologies utilisées
 
--[NVM](https://www.nvmnode.com/fr/guide/download.html) (Version Windows)
+- [NVM](https://www.nvmnode.com/fr/guide/download.html) (Version Windows)
 
 
 ## SetUp
