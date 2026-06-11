@@ -10,7 +10,7 @@ départs et arrivées, gestion du ticket de quai, collecte des taxes, gestion de
 stationnement et ainsi que la gestion des reservations de voyage pour les clients.
 
 
-# Technologies utilisées
+## Technologies utilisées
 
 - [NVM](https://www.nvmnode.com/fr/guide/download.html) (Version Windows)
 
